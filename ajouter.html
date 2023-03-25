@@ -1,0 +1,92 @@
+<html>
+<head>
+	<title>Ajouter un Joueur</title>
+</head>
+<body>
+<div>
+    <ul class="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#blog">Blog</a></li>
+	  <li><a href="#docs">Docs</a></li>
+    </ul>
+  </div>
+
+<div class="ajt">
+	<form  action="ajouter.php" method="post" >
+			<label for="ph">Photo *</label>
+			<input  type ="file" name="ph"/>
+			
+			<label for="n">Nom *</label>
+			<input  type ="text" name="n" maxlength="20"/>
+			
+			<label for="prenom">Prenom *</label>
+			<input  type ="text" name="prenom" maxlength="20"/>
+			
+			<label for="t">Taille *</label>
+			<input  type ="number" name="t" min="0.70" max="3" step="0.01"/>
+			
+			<label for="p">Poid *</label>
+			<input  type ="number" name="p" min="20" max="300" step="0.01"/>
+			
+			<label for="po">Poste *</label>
+			<input  type ="text" name="po" maxlength="20"/>
+			
+			<label for="s">Statut *</label>
+			<select name="s">
+			<option value="ACTIF">ACTIF</option>
+			<option value="BLESSE">BLESSE</option>
+			<option value="SUSPENDU">SUSPENDU</option>
+			<option value="ABSENT">ABSENT</option>
+			</select>
+		
+			<label for="nu">Numéro de licence (10 Caracteres ) *</label>
+			<input  type ="text" name="nu" maxlength="10"/>
+			
+			<label for="d">Date de Naissance *</label>
+			<input  type ="date" name="d"/>
+			
+			<input  type ="submit" name="en"/>
+
+
+	</form>
+</div>
+
+
+<style>
+
+form{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+.menu {
+	display : flex;
+	 justify-content: center ;
+	background-color :#f16c6d;
+}
+
+
+.menu li {
+    list-style-type: none ;       
+}
+
+
+.menu a {
+    display:block;                
+    min-width: 120px;             
+	margin: 0.5rem;              
+    padding: 0.4rem 0;
+    text-align: center; 
+	background-color:   #5b9dd9;   
+    color: #fff;                 
+    text-decoration: none;   
+}
+</style>
+
+	
+							
+</body>
+</html>
